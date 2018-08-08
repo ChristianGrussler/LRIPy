@@ -55,7 +55,7 @@
 #############
 def projrast(Z,zv,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1}, init ={"t": 1, "s": 0,"k": 1},tol = 1e-12):
 
-    from projrnorm import projrnorm
+    from lrinorm.projrnorm import projrnorm
     import numpy as np
 
     ## Check if p = 2 or p = 'inf'

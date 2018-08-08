@@ -21,7 +21,8 @@
 import numpy as np
 from scipy.linalg import hankel
 import time
-from drhankelapprox import drhankelapprox
+from lrinorm import drhankelapprox
+
 H = hankel(np.arange(1,11,1),np.arange(10,0,-1)) # Hankel matrix
 r = 5 # Desired rank of the approximation
 dim = H.shape
@@ -48,8 +49,8 @@ print('Dougals-Rachford: '+str(rankM_dr))
 print('Non-convex Dougals-Rachford: '+str(rankM_ndr))
 
 print('\n---Relative Erros of the solutions---')
-print('Dougals-Rachford: ' + str(err_dr/np.linalg.norm(N)))
-print('Non-convex Dougals-Rachford: '+str(err_ndr/np.linalg.norm(N)))
+print('Dougals-Rachford: ' + str(err_dr/np.linalg.norm(H)))
+print('Non-convex Dougals-Rachford: '+str(err_ndr/np.linalg.norm(H)))
 
 print('\n---Elapse time of solvers---')
 print('Dougals-Rachford: '+str(t_dr)+' sec')

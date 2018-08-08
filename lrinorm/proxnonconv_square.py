@@ -41,7 +41,7 @@
 #############
 def proxnonconv_square(Z,r,p,gamma,mode = None,tol = 1e-12):
     
-    from proxnormrast_square import proxnormrast_square
+    from lrinorm.proxnormrast_square import proxnormrast_square
     import numpy as np
     
     ## Check if p = 2 or p = 'inf'

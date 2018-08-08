@@ -63,10 +63,10 @@ def drcomplete(N,Index,r,p,solver = None, gamma = 1,rho = 1,Z0 = None,tol = None
 
     import numpy as np
     from functools import partial
-    from projindex import projindex
-    from proxnonconv import proxnonconv
-    from proxnormrast import proxnormrast
-    from dr import dr
+    from lrinorm.projindex import projindex
+    from lrinorm.proxnonconv import proxnonconv
+    from lrinorm.proxnormrast import proxnormrast
+    from lrinorm.dr import dr
 
     # Define default tolerance value
     if tol is None:

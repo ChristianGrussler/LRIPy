@@ -62,10 +62,10 @@ def drhankelapprox(H,r,solver = None, gamma = 1,rho = 1,Z0 = None,tol = None):
     
     import numpy as np
     from functools import partial
-    from projhankel import projhankel
-    from proxnonconv_square import proxnonconv_square
-    from proxnormrast_square import proxnormrast_square
-    from dr import dr
+    from lrinorm.projhankel import projhankel
+    from lrinorm.proxnonconv_square import proxnonconv_square
+    from lrinorm.proxnormrast_square import proxnormrast_square
+    from lrinorm.dr import dr
 
     # Define default tolerance value
     if tol is None:
