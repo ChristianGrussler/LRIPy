@@ -41,7 +41,7 @@
 #############
 def proxnonconv(Z,r,p,gamma,mode = None,tol = 1e-12):
     
-    from lrinorm.proxnormrast import proxnormrast
+    from lripy.proxnormrast import proxnormrast
     import numpy as np
     
     ## Check if p = 2 or p = 'inf'

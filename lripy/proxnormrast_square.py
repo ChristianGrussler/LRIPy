@@ -55,7 +55,7 @@
 def proxnormrast_square(Z,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1}, init ={"t": 1, "s": 0,"k": 1},tol = 1e-12):
     
     import numpy as np
-    from lrinorm.projrast import projrast
+    from lripy.projrast import projrast
     
     X,_,final = projrast(Z,0,r,p,np.sqrt(gamma),mode,search,init,tol)
 

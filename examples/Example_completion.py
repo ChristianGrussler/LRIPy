@@ -24,7 +24,7 @@
 import numpy as np
 from scipy.linalg import hankel
 import time
-from lrinorm import drcomplete
+from lripy import drcomplete
 
 H = hankel(np.ones(10))
 r = 5

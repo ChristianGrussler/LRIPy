@@ -56,7 +56,7 @@
 def proxnormrast(Z,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1}, init ={"t": 1, "s": 0,"k": 1},tol = 1e-12):
     
     import numpy as np
-    from lrinorm.projrnorm import projrnorm
+    from lripy.projrnorm import projrnorm
 
     ## Check if p = 2 or p = 'inf'
     if p != 2 and p !='inf':

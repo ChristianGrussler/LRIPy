@@ -21,7 +21,7 @@
 import numpy as np
 from scipy.linalg import hankel
 import time
-from lrinorm import drhankelapprox
+from lripy import drhankelapprox
 
 H = hankel(np.arange(1,11,1),np.arange(10,0,-1)) # Hankel matrix
 r = 5 # Desired rank of the approximation

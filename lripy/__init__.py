@@ -1,3 +1,4 @@
+name = "lripy"
 from .projrast import projrast
 from .projrnorm import projrnorm
 from .proxnonconv import proxnonconv
