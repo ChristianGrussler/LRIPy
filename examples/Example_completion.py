@@ -20,15 +20,12 @@
 #   Department of Automatic Control, Lund Institute of Technology, 
 #   Lund University, ISBN 978-91-7753-081-7. 
 #############
-#%%
-import sys
-sys.path.append('/Users/christiang/Dropbox/PythonWORK/LRINorm/Prox')
-sys.path.append('/Users/christiang/Dropbox/PythonWORK/LRINorm/Optimization')
+
 
 import numpy as np
-from scipy.linalg import *
+from scipy.linalg import hankel
 import time
-from drcomplete import *
+from drcomplete import drcomplete
 
 H = hankel(np.ones(10))
 r = 5

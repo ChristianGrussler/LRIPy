@@ -18,15 +18,10 @@
 #   Lund University, ISBN 978-91-7753-081-7.  
 #############
 #%%
-import sys
-sys.path.append('/Users/christiang/Dropbox/PythonWORK/LRINorm/Prox')
-sys.path.append('/Users/christiang/Dropbox/PythonWORK/LRINorm/Optimization')
-
 import numpy as np
 from scipy.linalg import hankel
 import time
 from drhankelapprox import drhankelapprox
-
 H = hankel(np.arange(1,11,1),np.arange(10,0,-1)) # Hankel matrix
 r = 5 # Desired rank of the approximation
 dim = H.shape
