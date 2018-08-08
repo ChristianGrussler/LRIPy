@@ -9,5 +9,5 @@ setup(
     license='GPLv3',
     zip_safe=False,
     url='http://github.com/LowRankOpt/LRINormPy',
-    description='Python implementation of proximal mappings of Low-Rank Inducing Norms',
+    description='Python implementation for optimization with Low-Rank Inducing Norms',
 )
