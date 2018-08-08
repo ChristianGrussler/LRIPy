@@ -42,7 +42,7 @@ Let N be a matrix and Index be a binary matrix of the same size, where the ones 
 ```
 # Import the Douglas-Rachford Completion function:
 
-from lripy import drhankelapprox
+from lripy import drcomplete
 
 # Low-rank inducing norms with Douglas-Rachford splitting:
 
