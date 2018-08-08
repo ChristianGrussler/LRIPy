@@ -16,10 +16,6 @@ Low-rank rank inducing norms and non-convex Proximal Splitting Algoriths attempt
 ### Non-convex counter parts:
 * [Local Convergence of Proximal Splittinge Methods for Rank Constrained Problems](https://arxiv.org/abs/1710.04248)
 
-## Prerequisites
-No prerequisites for proximal splitting methods. 
-For CVX implementations get CVX from: http://cvxr.com/cvx/
-
 ## Installation
 
 The easiest way to install the package is to run ``pip install lripy``. To install the package from source, run ``python setup.py install`` in the main folder.  
