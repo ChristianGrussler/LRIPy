@@ -85,7 +85,7 @@ Proximal mapping of the SQUARED low-rank inducing norms at Z with parameter r an
 ```
 X = proxnormrast_square(Z,r,p,gamma)[0]
 ```
-#### Projection on the epi-graph of the low-rank inducing norms: 
+#### Projection onto the epi-graph of the low-rank inducing norms: 
 Projection of (Z,zv) on the epi-graph of the low-rank inducing norms with parameter r and scaling factor gamma:
 ```
 X,xv = projrast(Z,zv,r,p,gamma)[0:2]
