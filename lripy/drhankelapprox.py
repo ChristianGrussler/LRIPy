@@ -1,5 +1,6 @@
 def drhankelapprox(H,r,solver = None, gamma = 1,rho = 1,Z0 = None,tol = None):
-    """Douglas-Rachford proximal splitting for low-rank 
+    """
+    Douglas-Rachford proximal splitting for low-rank 
     approximation with Hankel constraint through the low-rank inducing 
     Frobenius norm and non-convex Douglas-Rachford.
             
@@ -56,7 +57,9 @@ def drhankelapprox(H,r,solver = None, gamma = 1,rho = 1,Z0 = None,tol = None):
     - C. Grussler (2017):
     "Rank reduction with convex constraints", PhD Thesis, 
     Department of Automatic Control, Lund Institute of Technology, 
-    Lund University, ISBN 978-91-7753-081-7."""   
+    Lund University, ISBN 978-91-7753-081-7.
+    """   
+    
     import numpy as np
     from functools import partial
     from lripy.projhankel import projhankel

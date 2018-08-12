@@ -1,5 +1,6 @@
 def dr(prox_f,prox_g,dim,gamma = 1,rho = 1,Z0 = None, tol = None):
-    """Douglas-Rachford proximal splitting algorithm with two proximal 
+    """
+    Douglas-Rachford proximal splitting algorithm with two proximal 
     mappings as inputs 
 
     DR(prox_f,prox_g,dim) runs the Douglas-Rachford splitting algorithm for the objective function 
@@ -30,7 +31,8 @@ def dr(prox_f,prox_g,dim,gamma = 1,rho = 1,Z0 = None, tol = None):
         4. ... = DR(prox_f,prox_g,dim,...,tol=tol_val,...) 
         sets the tolerance for zero entries as well as to stop the 
         iteratrions once norm(Y_k-X_k,'fro') < tol
-        The default tol-value is sqrt(eps)."""
+        The default tol-value is sqrt(eps).
+    """
     
     import numpy as np
     

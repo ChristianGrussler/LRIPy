@@ -1,5 +1,6 @@
 def projrnorm(z,zv,r,p,gamma, search = {"t": 1, "s": 1, "k": 1}, init ={"t": 1, "s": 0,"k": 1},tol = 1e-12):
-    """Projection onto the unit-ball or negative epi-graph of the 
+    """
+    Projection onto the unit-ball or negative epi-graph of the 
     scaled truncated ell_2 norm and ell_1 norms for integer-valued r.
 
     y,w,final = PROJRNORM(z,zv,r,p,gamma) computes the projection of z onto 
@@ -55,7 +56,8 @@ def projrnorm(z,zv,r,p,gamma, search = {"t": 1, "s": 1, "k": 1}, init ={"t": 1, 
     - C. Grussler (2017):
     "Rank reduction with convex constraints", PhD Thesis, 
     Department of Automatic Control, Lund Institute of Technology, 
-    Lund University, ISBN 978-91-7753-081-7."""  
+    Lund University, ISBN 978-91-7753-081-7.
+    """  
     
     import numpy as np
     

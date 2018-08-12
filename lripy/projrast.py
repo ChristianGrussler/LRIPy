@@ -1,5 +1,6 @@
 def projrast(Z,zv,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1}, init ={"t": 1, "s": 0,"k": 1},tol = 1e-12):
-    """Projection onto the epi-graph of the scaled low-rank inducing 
+    """
+    Projection onto the epi-graph of the scaled low-rank inducing 
     Frobenius and spectral norms for integer-valued r. 
 
     X,xv,final = PROJRAST(Z,zv,r,p,gamma) computes the projection onto the
@@ -52,7 +53,8 @@ def projrast(Z,zv,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1}, init 
     - C. Grussler (2017):
     "Rank reduction with convex constraints", PhD Thesis, 
     Department of Automatic Control, Lund Institute of Technology, 
-    Lund University, ISBN 978-91-7753-081-7."""
+    Lund University, ISBN 978-91-7753-081-7.
+    """
     
     from lripy.projrnorm import projrnorm
     import numpy as np

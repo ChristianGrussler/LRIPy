@@ -1,5 +1,6 @@
 def proxnormrast(Z,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1}, init ={"t": 1, "s": 0,"k": 1},tol = 1e-12):
-    """Prox of low-rank inducing Frobenius and spectral norm for 
+    """
+    Prox of low-rank inducing Frobenius and spectral norm for 
     integer-valued r. 
     
     X,final = PROXNORMRAST(Z,r,p,gamma) produces the prox of the low-rank 
@@ -52,7 +53,8 @@ def proxnormrast(Z,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1}, init
     - C. Grussler (2017):
     "Rank reduction with convex constraints", PhD Thesis, 
     Department of Automatic Control, Lund Institute of Technology, 
-    Lund University, ISBN 978-91-7753-081-7."""
+    Lund University, ISBN 978-91-7753-081-7.
+    """
     
     import numpy as np
     from lripy.projrnorm import projrnorm

@@ -1,5 +1,6 @@
 def proxnonconv(Z,r,p,gamma,mode = None,tol = 1e-12):
-    """Non-convex prox of the Frobenius and spectral norm + indicator 
+    """
+    Non-convex prox of the Frobenius and spectral norm + indicator 
     function of a matrix with at most rank r.
 
     X = PROXNONCONV(Z,r,p,gamma) determines the prox of 
@@ -38,7 +39,8 @@ def proxnonconv(Z,r,p,gamma,mode = None,tol = 1e-12):
     - C. Grussler (2017):
     "Rank reduction with convex constraints", PhD Thesis, 
     Department of Automatic Control, Lund Institute of Technology, 
-    Lund University, ISBN 978-91-7753-081-7."""
+    Lund University, ISBN 978-91-7753-081-7.
+    """
     from lripy.proxnormrast import proxnormrast
     import numpy as np
     
