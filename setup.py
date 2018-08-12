@@ -17,7 +17,6 @@ setuptools.setup(
     packages=['lripy'],
     classifiers=(
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GPLv3",
         "Operating System :: OS Independent",
     ),
 )

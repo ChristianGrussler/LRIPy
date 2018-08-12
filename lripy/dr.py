@@ -1,37 +1,37 @@
-#DR  Douglas-Rachford proximal splitting algorithm with two proximal 
-#    mappings as inputs 
-#  
-#   X,_,_,_ = DR(prox_f,prox_g,dim) runs the Douglas-Rachford splitting algorithm for the objective function 
-#   f + g, where:
-#       1. prox_f(Z,gamma) and prox_g(Z,gamma) are funcionts that derive the proximal mappings of 
-#       gamma*f and gamma*g evalutaed in Z. 
-#       2. dim is the dimension of the output of f and g. 
-#   
-#   Note: If f and g are convex, then X = argmin(f(X) + g(X)).
-#   
-#   X,Z_fix,iter,D = DR(prox_f,prox_g,dim) also returns:
-#       1. Z_fix = fix point of that Douglas-Rachford iterations
-#       2. iter = total number of Douglas-Rachford iterations
-#       3. D = Z_fix - X, which is the solution of the dual problem if f
-#       and g are convex. 
-#
-#   ... = DR(prox_f,prox_g,dim,option) allows to specify further options:
-#       1. ... = DR(prox_f,prox_g,dim,...,rho = rho_val,...) set the step
-#       length update of the fix-point update, i.e.,
-#       Z_{k+1} = Z_k + rho*(Y_k - X_k), where 0 < rho < 2.
-#       The default value is rho = 1.
-#       2. ... = DR(prox_f,prox_g,dim,...,gamma = gamma_val,...) sets gamma 
-#       to another value than the default gamma = 1.
-#       3. ... = DR(prox_f,prox_g,dim,...,Z0 = Z0_val,...) sets the 
-#       initial value of the fix-point iteration.
-#       The default choice is Z0 = 0.
-#       4. ... = DR(prox_f,prox_g,dim,...,tol=tol_val,...) 
-#       sets the tolerance for zero entries as well as to stop the 
-#       iteratrions once norm(Y_k-X_k,'fro') < tol
-#       The default tol-value is sqrt(eps).
-
 def dr(prox_f,prox_g,dim,gamma = 1,rho = 1,Z0 = None, tol = None):
+    """Douglas-Rachford proximal splitting algorithm with two proximal 
+    mappings as inputs 
 
+    DR(prox_f,prox_g,dim) runs the Douglas-Rachford splitting algorithm for the objective function 
+    f + g, where:
+        1. prox_f(Z,gamma) and prox_g(Z,gamma) are funcionts that derive the proximal mappings of 
+        gamma*f and gamma*g evalutaed in Z. 
+        2. dim is the dimension of the output of f and g. 
+
+    Note: If f and g are convex, then X = argmin(f(X) + g(X)).
+
+    X,Z_fix,iter,D = DR(prox_f,prox_g,dim) returns:
+        1. Solution X
+        2. Z_fix = fix point of that Douglas-Rachford iterations
+        3. iter = total number of Douglas-Rachford iterations
+        4. D = Z_fix - X, which is the solution of the dual problem if f
+        and g are convex. 
+
+    ... = DR(prox_f,prox_g,dim,option) allows to specify further options:
+        1. ... = DR(prox_f,prox_g,dim,...,rho = rho_val,...) set the step
+        length update of the fix-point update, i.e.,
+        Z_{k+1} = Z_k + rho*(Y_k - X_k), where 0 < rho < 2.
+        The default value is rho = 1.
+        2. ... = DR(prox_f,prox_g,dim,...,gamma = gamma_val,...) sets gamma 
+        to another value than the default gamma = 1.
+        3. ... = DR(prox_f,prox_g,dim,...,Z0 = Z0_val,...) sets the 
+        initial value of the fix-point iteration.
+        The default choice is Z0 = 0.
+        4. ... = DR(prox_f,prox_g,dim,...,tol=tol_val,...) 
+        sets the tolerance for zero entries as well as to stop the 
+        iteratrions once norm(Y_k-X_k,'fro') < tol
+        The default tol-value is sqrt(eps)."""
+    
     import numpy as np
     
 

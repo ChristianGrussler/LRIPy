@@ -1,15 +1,15 @@
+#PROJHANKEL Orthogonal projection onto the subspace of Hankel matrices
+#
+#   X = PROJHANKEL(Z) determines the orthogonal projection of 
+#   Z onto the subspaces of Hankel matrices, i.e., X is the 
+#   proximal mapping of (i_{Hankel}(X)), where i_{Hankel} 
+#   is the indicator function of the set of Hankel matrices.
+#
+#  X = PROJHANKEL(Z,H,gamma) allows to shift Z by -gamma*H, i.e., 
+#  X is projection of Z-gamma*H onto the subspaces of Hankel matrices and is
+#  therefore the proximal mapping of gamma*(i_{Hankel}(X)+trace(X'H)).
+
 def projhankel(Z,H = 0,gamma = 0):
-    """Orthogonal projection onto the subspace of Hankel matrices
-
-    X = PROJHANKEL(Z) determines the orthogonal projection of 
-    Z onto the subspaces of Hankel matrices, i.e., X is the 
-    proximal mapping of (i_{Hankel}(X)), where i_{Hankel} 
-    is the convex indicator function of the set of Hankel matrices.
-
-    X = PROJHANKEL(Z,H,gamma) allows to shift Z by -gamma*H, i.e., 
-    X is projection of Z-gamma*H onto the subspaces of Hankel matrices and is
-    therefore the proximal mapping of gamma*(i_{Hankel}(X)+trace(X'H))."""
-
     
     import numpy as np
     from scipy.linalg import hankel 
