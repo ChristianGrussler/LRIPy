@@ -18,7 +18,7 @@ Low-rank rank inducing norms and non-convex Proximal Splitting Algoriths attempt
 
 ## Installation
 
-The easiest way to install the package is to run ``pip install lripy``. Or for the latest changes, install the package from source, run either ``python setup.py install`` or ``pip install .`` in the main folder.  
+The easiest way to install the package is to run ``pip install lripy``. Or for the latest changes, install the package from source by either running ``python setup.py install`` or ``pip install .`` in the main folder.  
 
 ## Documentation
 In the following it holds that
