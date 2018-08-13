@@ -72,7 +72,7 @@ M = drhankelapprox(H,r,solver = 'NDR')[0]
 ```
 
 ### Proximal Mappings
-LRIPy provides Python implemenations for the proximal mappings to the low-rank inducing Frobenius and Spectral norm as well as their epi-graph projections and non-convex counter parts. In the following, we only discuss the matrix-valued case, but notice that for the vector-valued case, i.e., sparsity inducing, it is only required to add ``mode = 'vec`` as an input argument. 
+LRIPy provides Python implemenations for the proximal mappings to the low-rank inducing Frobenius and Spectral norm as well as their epi-graph projections and non-convex counter parts. In the following, we only discuss the matrix-valued case, but notice that for the vector-valued case, i.e., sparsity inducing, it is only required to add ``mode = 'vec'`` as an input argument. 
 
 #### Low-rank inducing Spectral and Frobenius norms: 
 
