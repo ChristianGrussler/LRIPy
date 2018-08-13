@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='lripy',
-    version='0.0.2',
+    version='0.0.3',
     author='Christian Grussler',
     author_email='christian.grussler@eng.cam.ac.uk',
     zip_safe=False,
