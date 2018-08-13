@@ -22,8 +22,8 @@ The easiest way to install the package is to run ``pip install lripy``. Or for t
 
 ## Documentation
 In the following it holds that
-* for the low-rank inducing Frobenius norm: p = 2
-* for the low-rank inducing Spectral norm:  p = 'inf'
+* for the low-rank inducing Frobenius norm: ``p = 2``
+* for the low-rank inducing Spectral norm:  ``p = 'inf'``
 
 ### Examples
 There are two examples in the "example" folder:
@@ -72,7 +72,7 @@ M = drhankelapprox(H,r,solver = 'NDR')[0]
 ```
 
 ### Proximal Mappings
-LRIPy provides Python implemenations for the proximal mappings to the low-rank inducing Frobenius and Spectral norm as well as their epi-graph projections and non-convex counter parts.
+LRIPy provides Python implemenations for the proximal mappings to the low-rank inducing Frobenius and Spectral norm as well as their epi-graph projections and non-convex counter parts. In the following, we only discuss the matrix-valued case, but notice that for the vector-valued case, i.e., sparsity inducing, it is only required to add ``mode = 'vec`` as an input argument. 
 
 #### Low-rank inducing Spectral and Frobenius norms: 
 
