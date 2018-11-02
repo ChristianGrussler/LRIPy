@@ -8,10 +8,10 @@ Low-rank rank inducing norms and non-convex Proximal Splitting Algoriths attempt
 
 ### Optimization with low-rank inducing norms: 
 * [Low-rank Inducing Norms with Optimality Interpretations](https://arxiv.org/abs/1612.03186)
-* [Low-rank Optimization with Convex Constraints](https://ieeexplore.ieee.org/document/8307426)
-* [The Use of the r* Heuristic in Covariance Completion Problems](http://www.control.lth.se/index.php?mact=ReglerPublicationsB,cntnt01,showpublication,0&cntnt01LUPid=a61669c7-29b9-41ee-82da-9c825b08f8d8&cntnt01returnid=60)
+* [Low-rank Optimization with Convex Constraints](https://doi.org/10.1109/TAC.2018.2813009)
+* [The Use of the r* Heuristic in Covariance Completion Problems](https://doi.org/10.1109/CDC.2016.7798554)
 * [Rank Reduction with Convex Constraints](https://lup.lub.lu.se/search/publication/54cb814f-59fe-4bc9-a7ef-773cbcf06889)
-* [On optimal low-rank approximation of non-negative matirces](http://lup.lub.lu.se/search/ws/files/21812505/2015cdcGrusslerRantzer.pdf)
+* [On optimal low-rank approximation of non-negative matirces](https://doi.org/10.1109/CDC.2015.7403045)
 
 ### Proximal mapping computation for low-rank inducing norms:
 * [Efficient Proximal Mapping Computation for Unitarily Invariant Low-Rank Inducing Norms](https://arxiv.org/abs/1810.07570)
