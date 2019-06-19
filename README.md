@@ -29,7 +29,7 @@ In the following it holds that
 * for the low-rank inducing Spectral norm:  ``p = 'inf'``
 
 ### Examples
-There are two examples in the "example" folder:
+There are two examples in the "examples" folder:
 
 1. Exact Matrix Completion
 2. Low-rank approximation with Hankel constraint
