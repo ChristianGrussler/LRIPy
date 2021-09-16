@@ -40,9 +40,9 @@ def proxnormrast_square(Z,r,p,gamma,mode = None,search = {"t": 1, "s": 1, "k": 1
     "Low-Rank Optimization with Convex Constraints", 
     IEEE Transactions on Automatic Control, DOI: 10.1109/TAC.2018.2813009.
 
-    - C. Grussler and P. Giselsson (2016):
+    - C. Grussler and P. Giselsson (2018):
     "Low-Rank Inducing Norms With Optimality Interpreations", 
-    arXiv:1612.03186v1.
+    SIAM J. Optim., 28(4), pp. 3057–3078.
 
     - C. Grussler and P. Giselsson (2017):
     "Local convergence of proximal splitting methods for rank constrained
