@@ -1,5 +1,5 @@
 # LRIPy
-A Python package for rank constrained optimization by low-rank inducing norms and non-convex proximal splitting methods.
+A Python3 package for rank constrained optimization by low-rank inducing norms and non-convex proximal splitting methods.
 
 ## Purpose:
 Low-rank rank inducing norms and non-convex Proximal Splitting Algoriths attempt to find exact rank/cardinality-r solutions to minimization problems with convex loss functions, i.e., avoiding of regularzation heuristics. LRIPy provides Python implementations for the proximal mappings of the low-rank inducing Frobenius and Spectral norms, as well as, their epi-graph projections and non-convex counter parts.
@@ -7,7 +7,7 @@ Low-rank rank inducing norms and non-convex Proximal Splitting Algoriths attempt
 ## Literature:
 
 ### Optimization with low-rank inducing norms: 
-* [Low-rank Inducing Norms with Optimality Interpretations](https://arxiv.org/abs/1612.03186)
+* [Low-rank Inducing Norms with Optimality Interpretations](https://epubs.siam.org/doi/abs/10.1137/17M1115770)
 * [Low-rank Optimization with Convex Constraints](https://doi.org/10.1109/TAC.2018.2813009)
 * [The Use of the r* Heuristic in Covariance Completion Problems](https://doi.org/10.1109/CDC.2016.7798554)
 * [Rank Reduction with Convex Constraints](https://lup.lub.lu.se/search/publication/54cb814f-59fe-4bc9-a7ef-773cbcf06889)
@@ -17,7 +17,7 @@ Low-rank rank inducing norms and non-convex Proximal Splitting Algoriths attempt
 * [Efficient Proximal Mapping Computation for Unitarily Invariant Low-Rank Inducing Norms](https://arxiv.org/abs/1810.07570)
 
 ### Non-convex counter parts:
-* [Local Convergence of Proximal Splittinge Methods for Rank Constrained Problems](https://arxiv.org/abs/1710.04248)
+* [Local Convergence of Proximal Splittinge Methods for Rank Constrained Problems](https://ieeexplore.ieee.org/document/8263743)
 
 ## Installation
 
