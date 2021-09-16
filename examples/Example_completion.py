@@ -6,9 +6,9 @@
 #
 #############
 # References: 
-#   - C. Grussler and P. Giselsson (2016):
+#   - C. Grussler and P. Giselsson (2018):
 #   "Low-Rank Inducing Norms With Optimality Interpreations", 
-#   arXiv:1612.03186v1.
+#   SIAM J. Optim., 28(4), pp. 3057–3078.
 #
 #   - C. Grussler and P. Giselsson (2017):
 #   "Local convergence of proximal splitting methods for rank constrained
@@ -42,15 +42,15 @@ tol_val = 1e-9
 ## Compute the different solutions:
 
 # Douglas-Rachford solving the convexified problem
-tic = time.clock()
+tic = time.perf_counter()
 M_dr,rankM_dr,err_dr,D_dr,Z_fix_dr,iter_dr = drcomplete(N,Index,r,2,Z0=Z0_val,tol=tol_val)
-toc = time.clock()
+toc = time.perf_counter()
 t_dr = toc - tic
 
 # Non-convex Douglas-Rachford
-tic = time.clock()
+tic = time.perf_counter()
 M_ndr,rankM_ndr,err_ndr,D_ndr,Z_fix_ndr,iter_ndr = drcomplete(N,Index,r,2,solver='NDR',Z0=Z0_val,tol=tol_val)
-toc = time.clock()
+toc = time.perf_counter()
 t_ndr = toc-tic 
 
 ## Display summary
